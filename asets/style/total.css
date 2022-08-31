@@ -1,0 +1,19 @@
+.total{
+  display: flex;
+  justify-content: space-between;
+}
+.total p{
+  color:var(--GrayishCyan);
+  font-size: 1.3rem;
+  margin-top: -2rem;
+}
+.total input {
+  width: 19%;
+  height: 60%;
+  padding: 1rem 3rem;
+  background-color:var(--Verydarkcyan);
+  background-image: url(../images/icon-dollar.svg);
+  /*fill: var(--StrongCyan);*/
+  
+  color: var(--StrongCyan);
+}

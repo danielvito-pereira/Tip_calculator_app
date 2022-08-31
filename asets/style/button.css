@@ -1,0 +1,35 @@
+#button {
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+.botao{
+  display: flex;
+  text-align:center;
+  color: var(--Verydarkcyan);
+  background-color: var(--StrongCyan);
+  width:99%;
+  border: none;
+  border-radius: 0.5rem;
+  padding:1rem 2rem;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top:2rem ;
+  margin-bottom: 1rem;
+
+}
+
+
+ .botao:hover{
+  cursor: pointer;
+  color: var(--Verydarkcyan);
+  transition: background .2s;
+  background-color: var(--LightGrayishCyan);
+ }
+
+ .botao:active {
+  background-color: var(--Verydarkcyan);
+  color: var(--LightGrayishCyan);
+ }

@@ -1,44 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="./asets/style/reset.css">
+
+  <link rel="stylesheet" href="./asets/style/logo.css">
+
+  <link rel="stylesheet" href="./asets/style/container.css">
+  <link rel="stylesheet" href="./asets/style/title.css">
+  <link rel="stylesheet" href="./asets/style/container.css">
+
+  <link rel="stylesheet" href="./asets/style/valores.css">
+ 
+ 
+  <link rel="stylesheet" href="./asets/style/button.css">
+ <link rel="stylesheet" href="./asets/style/inputs.css">
+
+ <link rel="stylesheet" href="./asets/style/total.css">
+  
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    
+  <header class="logo">
+   
+  </header>
 
-  Number of People
+  <section class="container">
 
-  Tip Amount
-  / person
+    <section class="valores">
 
-  Total
-  / person
+      
+      <div class="inputs">
+        <h1 class="title">Bill</h1>
+        
+        <input id="bill" class="person" type="text">
+      </div>  
 
-  Reset
-  
+      <h1 class="title">Select Tip %</h1>
+      <div class="porcentagem">
+        <div class="valor">5%</div>
+        <div class="valor">10%</div>
+        <div class="valor">15%</div>
+        <div class="valor">25%</div>
+        <div class="valor">50%</div>
+        <input type="button" id="changed" class="valor custom" onclick="mudarType()" value="Custom"></button>
+      </div>
+      <div class="inputs">
+        <h1 class="title">Number of People</h1>
+        <input id="people" class="dollar" type="text">
+      </div>         
+    </section>
+    
+    <section class="valores result">
+      <div class="total">
+        <div class="text">
+          <h1 class="title">Tip Amount</h1>
+          <p>/ person</p>
+        </div>
+        <!--
+        <input class="dollar" type="text">
+        -->
+
+        <div id="amount" class="dollar resu"></div>
+      </div>
+
+      <div class="total">
+        <div class="text">
+          <h1 class="title">Total</h1>
+          <p>/ person</p>
+        </div>
+         <!--
+        <input  type="text">
+         -->
+        <div id="total" class="dollar resu"></div>
+      </div>
+
+      <button class="botao">Reset</button>
+    </section>
+  </section>
+
+
+<script src="./asets/js/script.js"></script>
+
+
+<!--  
+
+
+  <div class="-main-wrapper">
+  </div>
+
+
+
+  -->
+  <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+ --> 
 </body>
 </html>

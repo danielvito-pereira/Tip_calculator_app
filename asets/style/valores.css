@@ -1,0 +1,81 @@
+.valores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  padding:1rem;
+  width: 85%;
+  max-height: 70%;
+  min-width: 80%;
+  align-items: left;
+}
+
+.valores.result{
+  background-color:var(--Verydarkcyan);
+  text-align: left;
+  width: 78%;
+  max-height: 70%;
+  min-width: 78%;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.valores.result h1{
+  color: var(--White)
+}
+.porcentagem {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-align:center;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.valor{
+  display:flex;
+  background: var(--Verydarkcyan);
+  height: 25%;
+  width:  20%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  padding:0.3rem 3rem;
+  color: var(--White);
+  font-size: 2rem;
+  margin-right: 4%;
+}
+.valor:hover {
+  cursor: pointer;
+  background-color: var(--StrongCyan);
+  color: var(--Verydarkcyan);
+}
+.valor:active {
+  background-color: var(--StrongCyan);
+  color: var(--Verydarkcyan);
+}
+
+input.custom {
+  background: var(--VeryLighthGrayishcyan);
+  color: var(--GrayishCyan);
+  width: 38%;
+  height: 30%;
+  border-radius: 0.3rem;
+  padding: 1rem 3rem;
+  font-size: 200%;
+}
+.custom:hover {
+  cursor: pointer;
+  background: var(--VeryLighthGrayishcyan);
+}
+.dollar.resu{
+  width: 30%;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  text-align:center;
+  align-self: center;
+  color: var(--Verydarkcyan);
+  font-size: 200%;
+  margin-bottom: 1rem;
+}
