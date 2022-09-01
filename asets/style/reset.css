@@ -26,10 +26,10 @@ html, body {
   background-size: cover;
   background-position: center;
   overflow: overlay;
-  font-size: 1.6rem;
   text-align: center;
   font-family: 'Space Mono';
   font-size: 10px;
+  font-weight: 700;
 }
 
 html {

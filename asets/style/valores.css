@@ -43,7 +43,7 @@
   margin-bottom: 1rem;
   padding:0.3rem 3rem;
   color: var(--White);
-  font-size: 2rem;
+  font-size: 24px;
   margin-right: 4%;
 }
 .valor:hover {
@@ -59,23 +59,138 @@
 input.custom {
   background: var(--VeryLighthGrayishcyan);
   color: var(--GrayishCyan);
-  width: 38%;
+  width: 39%;
   height: 30%;
   border-radius: 0.3rem;
   padding: 1rem 3rem;
-  font-size: 200%;
+  font-size: 24px;
 }
 .custom:hover {
   cursor: pointer;
   background: var(--VeryLighthGrayishcyan);
 }
 .dollar.resu{
-  width: 30%;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  width: 50%;
   border-radius: 0.5rem;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1rem;
   text-align:center;
   align-self: center;
-  color: var(--Verydarkcyan);
-  font-size: 200%;
+  color: var(--StrongCyan);
+  font-size: 400%;
   margin-bottom: 1rem;
+  box-sizing: border-box;
+  /*
+  background-image: url(../images/icon-dollar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+
+
+*/
+
+
+
+
+
+
+ 
 }
+
+
+.dollar.resu::before {
+  content:url(../images/icon-dollar.svg);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+.valor label {
+  display: flex;
+  height: 111.3%;
+  width:  100%;
+  justify-content:center;
+  align-items:center;
+  background-color: rgb(245, 5, 5);
+}
+
+.valor label span {
+  z-index: 1;
+  
+}
+.valor label input[type=radio] {
+  display: flex;
+  all:inherit;
+  height: 5%;
+  width:15%;
+  background-color: rgb(245, 5, 5);
+  justify-content:center;
+  align-items:center;
+  z-index: 1;
+  position: absolute;
+}
+.valor label input[type=radio]:checked {
+  background-color: var(--StrongCyan);
+}
+.valor label input[type=radio]:checked + span{
+  color:  rgb(12, 8, 8);
+}
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+#scales{
+  display: none;
+}
+
+.checbox-label {
+  display:flex;
+  align-items: center;
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+#scales:checked{
+  color: rgb(3, 3, 3);
+}
+/*
+.checbox-label::before {
+  content: " ";
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  box-sizing: border-box;
+  border-radius:2px solid;
+  background-color: red;
+}*/

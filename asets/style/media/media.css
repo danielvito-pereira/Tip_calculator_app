@@ -1,0 +1,77 @@
+@media (min-width:1024px) {
+  .container {
+    display: flex;
+    flex-direction:row;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius:1.9rem;
+  }
+
+  .valores {
+    display: flex;
+    margin: auto;
+    padding:1rem;
+    width: 28%;
+    height: 90%;
+    max-height: 80%;
+    min-width: 55%;
+    box-sizing: border-box;
+  }
+
+  .valores.result{
+    background-color:var(--Verydarkcyan);
+    text-align: left;
+    width: 28%;
+    height: 90%;
+    max-height: 80%;
+    min-width: 35%;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .porcentagem {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+    flex-wrap: wrap;
+    gap: 0rem;
+
+    box-sizing: border-box;
+  }
+
+
+  .valor{
+    display:flex;
+    background: var(--Verydarkcyan);
+    height: 30%;
+    width:  10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    padding:0.3rem 3rem;
+    color: var(--White);
+    font-size: 24px;
+    margin-right: 4%;
+  }
+
+  input.custom {
+    width: 24%;
+    height: 35%;
+    font-size: 24px;
+  }
+
+  input {
+    width: 90%;
+    padding: 1rem ;
+
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+}

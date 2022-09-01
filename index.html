@@ -18,9 +18,12 @@
  
  
   <link rel="stylesheet" href="./asets/style/button.css">
- <link rel="stylesheet" href="./asets/style/inputs.css">
+  <link rel="stylesheet" href="./asets/style/inputs.css">
 
- <link rel="stylesheet" href="./asets/style/total.css">
+  <link rel="stylesheet" href="./asets/style/total.css">
+
+
+  <link rel="stylesheet" href="./asets/style/media/media.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -31,9 +34,7 @@
   </style> -->
 </head>
 <body>
-
-
-    
+  
   <header class="logo">
    
   </header>
@@ -42,22 +43,70 @@
 
     <section class="valores">
 
-      
       <div class="inputs">
         <h1 class="title">Bill</h1>
         
         <input id="bill" class="person" type="text">
-      </div>  
-
-      <h1 class="title">Select Tip %</h1>
-      <div class="porcentagem">
-        <div class="valor">5%</div>
-        <div class="valor">10%</div>
-        <div class="valor">15%</div>
-        <div class="valor">25%</div>
-        <div class="valor">50%</div>
-        <input type="button" id="changed" class="valor custom" onclick="mudarType()" value="Custom"></button>
       </div>
+      <h1 class="title">Select Tip %</h1>
+
+
+
+
+      <div class="porcentagem">
+
+
+        <div class="valor">
+          <input type="checkbox" id="scales n1" >
+          <label for="scales" class="checbox-label">5%</label>
+        </div>
+
+
+        <!--
+        <div class="valor">
+
+          <label>
+            <input type="radio" id="scales" >
+            <span>5%</span>
+          </label>
+
+        </div>
+-->
+
+        <div class="valor">
+          <input type="checkbox" id="scales" name="scales n2">
+          <label for="scales" class="checbox-label">10%</label>
+        </div>
+
+        <div class="valor">
+          <input type="checkbox" id="scales" name="scales n3">
+          <label for="scales" class="checbox-label">15%</label>
+        </div>
+
+
+        <div class="valor">
+            <input type="checkbox" id="scales" name="scales n4">
+            <label for="scales" class="checbox-label">25%</label>
+        </div>
+
+        
+        <div class="valor">
+
+          <input type="checkbox" id="scales" name="scales n5">
+          <label for="scales" class="checbox-label">50%</label>
+
+        </div>
+
+
+        <input type="button" id="changed" class="valor custom" onclick="mudarType()" value="Custom">
+
+
+      </div>
+
+
+
+
+
       <div class="inputs">
         <h1 class="title">Number of People</h1>
         <input id="people" class="dollar" type="text">
@@ -85,10 +134,12 @@
          <!--
         <input  type="text">
          -->
-        <div id="total" class="dollar resu"></div>
+        <div id="total" class="dollar resu">
+         
+        </div>
       </div>
 
-      <button class="botao">Reset</button>
+      <button class="botao" onclick="reset()">Reset</button>
     </section>
   </section>
 
