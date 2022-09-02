@@ -1,12 +1,125 @@
+const bill = document.getElementById('bill').value;
+var amount = document.getElementById('amount');
+var people = document.getElementById("people");
+const numeros = document.querySelectorAll('[id*=tecla]');
 
-var amount = document.getElementById('amount').innerHTML = amount;
-var total = document.getElementById("total").innerHTML = total;
+let porcentagem;
+let valorP;
+
+console.log(bill);
+const operacaoPendente = () => valorP !== undefined;/*verifica se a porcentagem é diferente  de undefined */
 
 
-function calcular() {
-  var bill = document.getElementById('bill').value;
-  var people = document.getElementById('people').value;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const gorjeta = () => {
+
 }
+
+const selecionarPercentagem=(evento) => {
+
+    valorP = evento.target.textContent;/*grava qual operador foi utilizado */
+ 
+}
+numeros.forEach(valorP => valorP.addEventListener('click',event => {
+  console.log(event.target);
+
+  if (valorP === tecla5) {
+    porcentagem = bill;
+   
+  } else if (valorP === tecla10) {
+    porcentagem = 10;
+  }else if (valorP === tecla15) {
+    porcentagem = 15;
+  }else if (valorP === tecla25) {
+    porcentagem = 25;
+  }else if (valorP === tecla50) {
+    porcentagem = 50;
+  }
+  console.log(bill);
+}));
+
+
+ /*pega a percentagem)
+
+
+
+
+  switch (porcentagem) {
+    case tecla5:
+
+        porcentagem = 5/100 * bill;
+       
+      break;
+    case tecla10:
+        porcentagem = 10/100 * bill;
+      break;
+
+    case tecla15:
+        porcentagem = 15/100 * bill;
+      break;
+
+    case tecla25:
+        porcentagem = 25/100 * bill;
+      break;  
+
+    case tecla50:
+        porcentagem = 50/100 * bill;
+      break;    
+    default:
+      return "error"
+      break;
+
+ 
+  }
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const calcular = () => {
+  total = bill * gorjeta+people;
+  
+}
+ var totalPesoa = document.getElementById("total").value = total/ people;
+
+
+
+
+
+
+
 
 function teste() {
 
@@ -23,16 +136,9 @@ function mudarType() {
  document.getElementById ("changed"). type = "number"; 
 }
 
-function resultado() {
-  document.getElementById("total").innerHTML = total;
-  document.getElementById('amount').innerHTML = amount;
-}
 
 function reset() {
   window.location.reload();
 }
-
+document.getElementById('reset').addEventListener('click', reset);
 teste();
-
-
-console.log(teste());

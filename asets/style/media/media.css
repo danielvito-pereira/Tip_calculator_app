@@ -8,16 +8,17 @@
     box-sizing: border-box;
     border-radius:1.9rem;
   }
-
+ 
   .valores {
     display: flex;
     margin: auto;
     padding:1rem;
-    width: 28%;
-    height: 90%;
+    width: 38%;
+    height: 80%;
     max-height: 80%;
     min-width: 55%;
     box-sizing: border-box;
+    background-color: black;
   }
 
   .valores.result{
@@ -32,22 +33,27 @@
   }
 
   .porcentagem {
+    /*
     display:flex;
     justify-content:center;
     align-items: center;
     text-align:center;
     flex-wrap: wrap;
     gap: 0rem;
-
+*/
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    gap: 1rem;
     box-sizing: border-box;
+    padding: 0.5rem;
   }
 
 
   .valor{
     display:flex;
     background: var(--Verydarkcyan);
-    height: 30%;
-    width:  10%;
+    height: 80%;
+    width:  70%;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -60,8 +66,8 @@
   }
 
   input.custom {
-    width: 24%;
-    height: 35%;
+    width: 70%;
+    height: 84%;
     font-size: 24px;
   }
 
@@ -70,7 +76,10 @@
     padding: 1rem ;
 
   }
-
+  input.custom[type="number"] {
+    width: 40%;
+    height:59%;
+  }
   .title {
     font-size: 1.3rem;
   }
