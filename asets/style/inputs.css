@@ -9,10 +9,7 @@ input {
   font-weight: bold;
   text-align: right;
 }
-input:hover{
-  cursor:pointer;
 
-}
 input:focus{
   border: 1px solid var(--LightGrayishCyan);
 
